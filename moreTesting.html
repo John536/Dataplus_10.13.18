@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src='assets/app.js'></script>
+</head>
+
+<body>
+<div class="timer-container" id="#run-the-timer">
+        <span class="minute">01</span>:<span class="second">00</span>    
+        </div>
+<div class="container i-am-centered" id="rewardContainer">
+    
+</div>
+
+    <!-- Loading audio sounds -->
+<audio id="kittenSound1">
+        <source src="assets/kittenSound1.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="dogBark1">
+        <source src="assets/dogBark1.mp3" type="audio/mpeg">
+    </audio>
+<audio id="dolphinSound">
+        <source src="assets/dolphin1.mp3" type="audio/mpeg">
+    </audio>
+<audio id="tigerSound">
+        <source src="assets/tigerSound1.mp3" type="audio/mpeg">
+    </audio>
+
+
+<!-- 
+*********************************************************************
+Start Container
+*********************************************************************    
+ -->
+
+    <div class="container i-am-centered" id="startContainer">
+        <div class="row">
+
+            <div class="col-12" id="startInstructions">
+                <h1>Rescue the animals from Pirate Pete!</h1>
+            </div>
+                
+            <div class="row">
+            <div class="clearfix" id="piratePetePic"><img src="assets/piratePete1.png" class="img-responsive"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <button type="button" class="btn btn-primary" id="startButton">START</button>
+                    </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+<!-- 
+**********************************************************************
+QUESTION 1 CONTAINER
+********************************************************************** -->
+
+    <div class="container i-am-centered" id="containerQuestion1">
+        <div class="row">
+
+            <div class="col-xs-6" id="progress">1/5</div>
+            <div class="col-xs-6" id="chestPic">
+
+           <div id="goldAmt"><img src="assets/tchest.png"></div>
+</div>
+
+
+
+            <!-- closes progress row -->
+        </div>
+        <div class="row">
+            <div class="col-12" id="question1">
+                <!-- closes question1 div -->
+            </div>
+            <!-- closes row -->
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <button type="button" class="btn btn-primary question1AnswerClss" id="q1Answ1"></button>                
+                <!-- closes  col-12-->
+            </div>
+            <!-- closes row -->
+        </div>
+        <div class="row">
+            <div class="col-12">
+            <button type="button" class="btn btn-primary question1AnswerClss" id="q1Answ2"></button>           
+                <!-- closes  col-12-->
+            </div>
+            <!-- closes row -->
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <button type="button" class="btn btn-primary question1AnswerClss" id="q1Answ3"></button>
+                <!-- closes  col-12-->
+            </div>
+            <!-- closes row -->
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <button type="button" class="btn btn-primary question1AnswerClss" id="q1Answ4"></button>
+                <!-- closes  col-12-->
+            </div>
+            <!-- closes row -->
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <button type="button" class="btn btn-primary question1AnswerClss" id="q1Answ5"></button>
+                <!-- closes  col-12-->
+            </div>
+            <!-- closes row -->
+        </div>
+    </div>
+    <!-- Closes container -->
+
+
+
+<!-- 
+**********************************************************************
+QUESTION 2 CONTAINER
+********************************************************************** -->
+<div class="container i-am-centered" id="containerQuestion2">
+        <div class="row">
+            <div class="col-xs-6" id="progress">2/5</div>
+            <div class="col-xs-6" id="chestPic">
+
+           <div id="goldAmt"><img src="assets/tchest.png"></div>
+</div>
+
+            <!-- closes progress row -->
+        </div>
+        <div class="row">
+            <div class="col-12" id="question2">
+                <!-- closes question1 div -->
+            </div>
+            <!-- closes row -->
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <button type="button" class="btn btn-primary question2AnswerClss" id="q2Answ1"></button>                
+                <!-- closes  col-12-->
+            </div>
+            <!-- closes row -->
+        </div>
+        <div class="row">
+            <div class="col-12">
+            <button type="button" class="btn btn-primary question2AnswerClss" id="q2Answ2"></button>           
+                <!-- closes  col-12-->
+            </div>
+            <!-- closes row -->
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <button type="button" class="btn btn-primary question2AnswerClss" id="q2Answ3"></button>
+                <!-- closes  col-12-->
+            </div>
+            <!-- closes row -->
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <button type="button" class="btn btn-primary question2AnswerClss" id="q2Answ4"></button>
+                <!-- closes  col-12-->
+            </div>
+            <!-- closes row -->
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <button type="button" class="btn btn-primary question2AnswerClss" id="q2Answ5"></button>
+                <!-- closes  col-12-->
+            </div>
+            <!-- closes row -->
+        </div>
+    </div>
+    <!-- Closes container -->
+
+<!-- 
+**********************************************************************
+QUESTION 3 CONTAINER
+********************************************************************** -->
+<div class="container i-am-centered" id="containerQuestion3">
+        <div class="row">
+            <div class="col-xs-6" id="progress">3/5</div>
+            <div class="col-xs-6" id="chestPic">
+
+           <div id="goldAmt"><img src="assets/tchest.png"></div>
+</div>
+            <!-- closes progress row -->
+        </div>
+        <div class="row">
+            <div class="col-12" id="question3">
+                <!-- closes question1 div -->
+            </div>
+            <!-- closes row -->
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <button type="button" class="btn btn-primary question3AnswerClss" id="q3Answ1"></button>                
+                <!-- closes  col-12-->
+            </div>
+            <!-- closes row -->
+        </div>
+        <div class="row">
+            <div class="col-12">
+            <button type="button" class="btn btn-primary question3AnswerClss" id="q3Answ2"></button>           
+                <!-- closes  col-12-->
+            </div>
+            <!-- closes row -->
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <button type="button" class="btn btn-primary question3AnswerClss" id="q3Answ3"></button>
+                <!-- closes  col-12-->
+            </div>
+            <!-- closes row -->
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <button type="button" class="btn btn-primary question3AnswerClss" id="q3Answ4"></button>
+                <!-- closes  col-12-->
+            </div>
+            <!-- closes row -->
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <button type="button" class="btn btn-primary question3AnswerClss" id="q3Answ5"></button>
+                <!-- closes  col-12-->
+            </div>
+            <!-- closes row -->
+        </div>
+    </div>
+    <!-- Closes container -->
+
+<!-- 
+**********************************************************************
+QUESTION 4 CONTAINER
+********************************************************************** -->
+<div class="container i-am-centered" id="containerQuestion4">
+        <div class="row">
+            <div class="col-xs-6" id="progress">4/5</div>
+            <div class="col-xs-6" id="chestPic">
+
+           <div id="goldAmt"><img src="assets/tchest.png"></div>
+</div>
+            <!-- closes progress row -->
+        </div>
+        <div class="row">
+            <div class="col-12" id="question4">
+                <!-- closes question1 div -->
+            </div>
+            <!-- closes row -->
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <button type="button" class="btn btn-primary question4AnswerClss" id="q4Answ1"></button>                
+                <!-- closes  col-12-->
+            </div>
+            <!-- closes row -->
+        </div>
+        <div class="row">
+            <div class="col-12">
+            <button type="button" class="btn btn-primary question4AnswerClss" id="q4Answ2"></button>           
+                <!-- closes  col-12-->
+            </div>
+            <!-- closes row -->
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <button type="button" class="btn btn-primary question4AnswerClss" id="q4Answ3"></button>
+                <!-- closes  col-12-->
+            </div>
+            <!-- closes row -->
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <button type="button" class="btn btn-primary question4AnswerClss" id="q4Answ4"></button>
+                <!-- closes  col-12-->
+            </div>
+            <!-- closes row -->
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <button type="button" class="btn btn-primary question4AnswerClss" id="q4Answ5"></button>
+                <!-- closes  col-12-->
+            </div>
+            <!-- closes row -->
+        </div>
+    </div>
+    <!-- Closes container -->    
+
+<!-- 
+**********************************************************************
+QUESTION 5 CONTAINER
+********************************************************************** -->
+<div class="container i-am-centered" id="containerQuestion5">
+        <div class="row">
+            <div class="col-xs-6" id="progress">5/5</div>
+            <div class="col-xs-6" id="chestPic">
+
+           <div id="goldAmt"><img src="assets/tchest.png"></div>
+</div>
+            <!-- closes progress row -->
+        </div>
+        <div class="row">
+            <div class="col-12" id="question5">
+                <!-- closes question1 div -->
+            </div>
+            <!-- closes row -->
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <button type="button" class="btn btn-primary question5AnswerClss" id="q5Answ1"></button>                
+                <!-- closes  col-12-->
+            </div>
+            <!-- closes row -->
+        </div>
+        <div class="row">
+            <div class="col-12">
+            <button type="button" class="btn btn-primary question5AnswerClss" id="q5Answ2"></button>           
+                <!-- closes  col-12-->
+            </div>
+            <!-- closes row -->
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <button type="button" class="btn btn-primary question5AnswerClss" id="q5Answ3"></button>
+                <!-- closes  col-12-->
+            </div>
+            <!-- closes row -->
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <button type="button" class="btn btn-primary question5AnswerClss" id="q5Answ4"></button>
+                <!-- closes  col-12-->
+            </div>
+            <!-- closes row -->
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <button type="button" class="btn btn-primary question5AnswerClss" id="q5Answ5"></button>
+                <!-- closes  col-12-->
+            </div>
+            <!-- closes row -->
+        </div>
+    </div>
+    <!-- Closes container -->    
+
+
+<!-- 
+**********************************************************************
+DONE CONTAINER
+********************************************************************** -->
+
+<div class="container i-am-centered" id="containerDone">
+        <div class="row">
+            <div class="col-12" id="done">
+                <h1>You're finished for Today!</h1>
+                <div class="clearfix" id="animalPic"></div>
+            </div>
+           
+         
+</div>
+
+
+</body>
+
+</html>
